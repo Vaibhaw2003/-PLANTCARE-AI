@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlantCare AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">🌿 PlantCare AI</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="page-container">
+
+    <div class="main-card">
+        <h1>AI Powered Plant Disease Detection</h1>
+        <p class="subtitle">Upload leaf image to detect disease</p>
+
+        <div id="drop-area">
+            <input type="file" id="fileInput" hidden>
+            <p>Drag & Drop Leaf Image</p>
+            <button id="browseBtn">Browse File</button>
+        </div>
+
+        <div id="preview"></div>
+
+        <button id="predictBtn" class="predict-btn">🚀 Predict Disease</button>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="result" class="result hidden">
+            <h2 id="disease"></h2>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <p id="confidenceText"></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div>
+            <h3>🌿 PlantCare AI</h3>
+            <p>AI Powered Disease Detection</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <p>📧 vaibhaw.25161238@kiet.edu</p>
+            <p>📍 Meerut, India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 PlantCare AI | All Rights Reserved
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
