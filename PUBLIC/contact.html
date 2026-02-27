@@ -6,6 +6,40 @@
 <title>Contact - PlantCare AI</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navbar = document.querySelector(".navbar");
+
+    if (navbar) {
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    }
+
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const footer = document.querySelector(".footer");
+
+    function revealFooter() {
+        const triggerBottom = window.innerHeight * 0.9;
+        const footerTop = footer.getBoundingClientRect().top;
+
+        if (footerTop < triggerBottom) {
+            footer.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealFooter);
+    revealFooter();
+});
+</script>
 <body>
 
 <!-- NAVBAR -->
@@ -48,29 +82,43 @@
 
 <!-- FOOTER -->
 <footer class="footer">
+
     <div class="footer-container">
-        <div>
-            <h3>🌿 PlantCare AI</h3>
-            <p>AI Powered Disease Detection</p>
+
+        <!-- Left Section -->
+        <div class="footer-brand">
+            <h2>🌿 PlantCare AI</h2>
+            <p>AI Powered Plant Disease Detection System</p>
+            <p>Smart farming with Deep Learning 🌱</p>
         </div>
 
+        <!-- Middle Section -->
         <div class="footer-links">
+            <h3>Quick Links</h3>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="About.html">About</a>
             <a href="dashboard.html">Dashboard</a>
             <a href="contact.html">Contact</a>
         </div>
 
-        <div>
-            <p>📧 vaibhaw.25161238@kiet.edu</p>
+        <!-- Right Section -->
+        <div class="footer-contact">
+            <h3>Developer Info</h3>
+            <p>👨‍💻 Vaibhaw Singh</p>
+            <p>📧 vaibhawrajput05@gmail.com</p>
+            <p>📱 +91-8874812003</p>
             <p>📍 Meerut, India</p>
         </div>
+
     </div>
 
     <div class="footer-bottom">
         © 2026 PlantCare AI | All Rights Reserved
     </div>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -58,3 +58,10 @@ predictBtn.addEventListener("click", async () => {
         loader.classList.add("hidden");
     }
 });
+
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    if (!navbar) return;
+
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
